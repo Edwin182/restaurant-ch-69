@@ -1,24 +1,41 @@
 body{
-font-family: arial;
+font-family: Arial, sans-serif;
+background-color: #f5ef6e;
 }
 
 /*header*/
-
+h1{
+    color: #8b0000;
+    text-shadow: 2px 2px 2px gray;
+}
 /*menu*/
-table,td{
-    border: 1px solid black;
+table{
     border-collapse: collapse;
+    width: 70%;
+    box-shadow: 0px 4px 10px rgba (0,0,0,0,2);
 }
 
 td,th{
+    border: 1px solid #ccc;
     padding: 5px;
-    width: 100px;
     text-align: center;
 }
-
+td:nth-child(2){
+    width: 250px;
+    white-space: nowrap;
+    text-align: center;
+}
 th{
-    background-color: gray;
+    background-color: #8b0000;
+    text-shadow: 2px 2px 2px gray;
+    color: white;
 }
 .highlight{
     font-weight: bold;
+}
+.steak{
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
 }
