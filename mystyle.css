@@ -1,20 +1,58 @@
 body{
-font-family: Arial, sans-serif;
-background-color: #f5ef6e;
+font-family: Arial;
+background-color: beige;
 }
-
+.page-container{
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+}
 /*header*/
+.menu-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
 h1{
     color: #8b0000;
     text-shadow: 2px 2px 2px gray;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/*dishes section*/
+
+.month-dish-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.dishes-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+.dish-item{
+    border: 1px solid black;
+    background-color: aqua;
+    padding: 20px;
+}
+
 /*menu*/
+
 table{
     border-collapse: collapse;
     width: 70%;
     box-shadow: 0px 4px 10px rgba (0,0,0,0,2);
 }
-
 td,th{
     border: 1px solid #ccc;
     padding: 5px;
@@ -34,8 +72,43 @@ th{
     font-weight: bold;
 }
 .steak{
-    width: 50%;
-    max-width: 400px;
+    width: 220px;
     height: auto;
     border-radius: 10px;
+}
+.details-flex{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.btn{
+    background-color: #222222;
+    color: white;
+    padding: 12px;
+}
+    /*forms*/
+
+.form-flex{
+        display: flex;
+        justify-content: space-around;
+}
+.form-container{
+    background-color: FFF;
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+}
+.input-container{
+    margin-bottom: 20px;
+}
+.input-container input,
+.input-container select,
+.input-container textarea{
+    width: 60%;
+    padding: 5px;
+}
+.input-container label{
+    display: inline-block;
+    font-size: 12px;
+    width: 80px;
 }
